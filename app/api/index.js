@@ -1,7 +1,7 @@
 // General api to access data
-import ApiConstants from './ApiConstants';
+import ApiConstants from './ApiConstants'
 export default function api(path, params, method, token) {
-    let options;
+    let options
     options = {
         headers: {
             Accept: 'application/json',
@@ -10,10 +10,10 @@ export default function api(path, params, method, token) {
         },
         method: method,
         ...(params && { body: JSON.stringify(params) })
-    };
+    }
 
     return fetch(ApiConstants.BASE_URL + path, options)
         .then(resp => resp.json())
         .then(json => json)
-        .catch(error => error);
+        .catch(error => error)
 }

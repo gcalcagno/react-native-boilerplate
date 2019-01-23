@@ -1,9 +1,9 @@
-import { NavigationActions } from 'react-navigation';
+import { NavigationActions } from 'react-navigation'
 
-let _navigator;
+let _navigator
 
 function setTopLevelNavigator(navigatorRef) {
-    _navigator = navigatorRef;
+    _navigator = navigatorRef
 }
 
 function navigate(routeName, params) {
@@ -12,7 +12,7 @@ function navigate(routeName, params) {
             routeName,
             params
         })
-    );
+    )
 }
 
 function goBack(key) {
@@ -20,7 +20,7 @@ function goBack(key) {
         NavigationActions.back({
             key: key
         })
-    );
+    )
 }
 
 // add other navigation functions that you need and export them
@@ -29,4 +29,4 @@ export default {
     navigate,
     goBack,
     setTopLevelNavigator
-};
+}

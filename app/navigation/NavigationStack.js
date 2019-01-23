@@ -1,7 +1,7 @@
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation'
 
-import Login from 'app/screens/Login';
-import Home from 'app/screens/Home';
+import Login from 'app/screens/Login'
+import Home from 'app/screens/Home'
 
 const RNApp = createStackNavigator(
     {
@@ -17,6 +17,6 @@ const RNApp = createStackNavigator(
     {
         initialRouteName: 'Login'
     }
-);
+)
 
-export default RNApp;
+export default RNApp

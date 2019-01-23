@@ -1,5 +1,5 @@
-import Api from 'app/api';
-import ApiConstants from '../ApiConstants';
+import Api from 'app/api'
+import ApiConstants from '../ApiConstants'
 
 export default function loginUser(username, password) {
     return Api(
@@ -7,5 +7,5 @@ export default function loginUser(username, password) {
         null,
         'post',
         null
-    );
+    )
 }
